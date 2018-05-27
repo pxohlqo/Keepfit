@@ -1,2 +1,2 @@
 # Keepfit
-An simple app that can record your everyday calorie intake, writen by kotlin.
+用 Kotlin 写的一个记录每天热量摄入的小 app 还有很多问题，希望能够得到大家的帮助~~~c(ˊᗜˋ*c)
