@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Keepfit</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="for_day_frag_state_future">下一顿吃</string>
+
+    <string name="for_day_frag_state_no_record">牛逼啊！饿了一天</string>
+
+    <string-array name="food_list">
+        <item>炸鸡</item>
+        <item>汉堡</item>
+        <item>薯条</item>
+    </string-array>
+</resources>

@@ -1,0 +1,71 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:6978893478545533934",
+      "lastPropertyId": "5:8312864220329921000",
+      "name": "FoodEntity",
+      "properties": [
+        {
+          "id": "1:8303621620493730810",
+          "name": "Id"
+        },
+        {
+          "id": "2:1960880140288141029",
+          "name": "name"
+        },
+        {
+          "id": "3:8913152354734547377",
+          "name": "unit"
+        },
+        {
+          "id": "4:9163684345509483659",
+          "name": "imageUri"
+        },
+        {
+          "id": "5:8312864220329921000",
+          "name": "thermal"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:2406867596870443066",
+      "lastPropertyId": "4:2320124519434347870",
+      "name": "FoodRecordEntity",
+      "properties": [
+        {
+          "id": "1:768362694584974967",
+          "name": "id"
+        },
+        {
+          "id": "2:7871981425619513287",
+          "name": "time"
+        },
+        {
+          "id": "3:7844575420713285475",
+          "indexId": "1:6617444904205834791",
+          "name": "foodId"
+        },
+        {
+          "id": "4:2320124519434347870",
+          "name": "quantity"
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "2:2406867596870443066",
+  "lastIndexId": "1:6617444904205834791",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 4,
+  "modelVersionParserMinimum": 4,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}
