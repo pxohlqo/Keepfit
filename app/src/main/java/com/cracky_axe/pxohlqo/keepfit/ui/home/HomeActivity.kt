@@ -53,6 +53,7 @@ class HomeActivity : AppCompatActivity(), AnkoLogger, ForDayRecordFragment.Recor
 
     override fun onResume() {
         super.onResume()
+        getFoodRecordAsync()
     }
 
     fun toAddRecordActivity(view: View) {
@@ -85,6 +86,8 @@ class HomeActivity : AppCompatActivity(), AnkoLogger, ForDayRecordFragment.Recor
         val queryRecord = store.boxFor(FoodRecordEntity::class.java).query()
 
         queryRecord.between(FoodRecordEntity_.time, weekTimeRange[0] + (it) * FitDateUtils.DAY_TIME_RANGE, weekTimeRange[0] + (it + 1) * FitDateUtils.DAY_TIME_RANGE)
+        info { "${weekTimeRange[0]}, ${it}" }
+        info { "${weekTimeRange[0] + (it) * FitDateUtils.DAY_TIME_RANGE}, ${weekTimeRange[0] + (it) * FitDateUtils.DAY_TIME_RANGE}" }
 
         return queryRecord.build().find()
     }
@@ -107,8 +110,9 @@ class HomeActivity : AppCompatActivity(), AnkoLogger, ForDayRecordFragment.Recor
                     foodRecordForWeek[it] = mutableListOf()
 
                 } else {
-                    val tempList = getFoodRecordOnce(it + 1)
+                    val tempList = getFoodRecordOnce(it)
                     foodRecordForWeek[it] = tempList
+                    info { "got ${tempList.size} records." }
 
                 }
             }

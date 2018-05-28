@@ -69,7 +69,7 @@ class ExampleUnitTest {
         val calendar = Calendar.getInstance()
 
         var mon2Today = calendar.get(Calendar.DAY_OF_WEEK) - 2
-        println(FitDateUtils.getTodayOfWeek())
+        println(FitDateUtils.getWeekTimeRange())
     }
 
 
