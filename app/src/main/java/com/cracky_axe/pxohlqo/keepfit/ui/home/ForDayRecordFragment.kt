@@ -98,12 +98,12 @@ class ForDayRecordFragment : Fragment(), AnkoLogger, ForDayRecordAdapter.OnItemL
     override fun onMenuItemClick(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.menu_item_longClick_delete -> {
-                removeRecord(dataSet[longClickedRecordIndex])
+                removeRecord(longClickedRecordIndex)
                 return true
             }
 
             R.id.menu_item_longClick_change -> {
-                changeRecord(dataSet[longClickedRecordIndex])
+                changeRecord(longClickedRecordIndex)
                 return true
             }
 
@@ -147,16 +147,16 @@ class ForDayRecordFragment : Fragment(), AnkoLogger, ForDayRecordAdapter.OnItemL
     }
 
     interface RecordFragmentCallBackHandler {
-        fun removeRecordItem(item: FoodRecordEntity)
-        fun changeRecordItem(item: FoodRecordEntity)
+        fun removeRecordItem(dataIndex: Int)
+        fun changeRecordItem(dataIndex: Int)
     }
 
-    fun removeRecord(item: FoodRecordEntity) {
-        recordFragmentCallBackHandler.removeRecordItem(item)
+    fun removeRecord(dataIndex: Int) {
+        recordFragmentCallBackHandler.removeRecordItem(dataIndex)
     }
 
-    fun changeRecord(item: FoodRecordEntity) {
-        recordFragmentCallBackHandler.changeRecordItem(item)
+    fun changeRecord(dataIndex: Int) {
+        recordFragmentCallBackHandler.changeRecordItem(dataIndex)
     }
 
 
