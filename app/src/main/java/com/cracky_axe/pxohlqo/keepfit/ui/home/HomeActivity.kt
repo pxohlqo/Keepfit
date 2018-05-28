@@ -160,19 +160,21 @@ class HomeActivity : AppCompatActivity(), AnkoLogger, ForDayRecordFragment.Recor
                 )
     }
 
-    override fun removeRecordItem(item: FoodRecordEntity) {
-        store.boxFor(FoodRecordEntity::class.java).remove(item)
+    override fun removeRecordItem(dataIndex: Int) {
+        store.boxFor(FoodRecordEntity::class.java).remove(foodRecordForWeek[home_viewPager.currentItem][dataIndex])
+        foodRecordForWeek[home_viewPager.currentItem].removeAt(dataIndex)
         toast("record deleted.")
+        info { "${foodRecordForWeek[home_viewPager.currentItem].size}" }
         home_viewPager.adapter!!.notifyDataSetChanged()
     }
 
-    override fun changeRecordItem(item: FoodRecordEntity) {
+    override fun changeRecordItem(dataIndex: Int) {
         toast("Change record item. Not implement yet.")
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-            R.id.menu_home_query -> {
+            R.id.menu_home_refresh -> {
                 getFoodRecordAsync()
 
                 return true
