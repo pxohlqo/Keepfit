@@ -17,10 +17,6 @@
           "name": "name"
         },
         {
-          "id": "3:8913152354734547377",
-          "name": "unit"
-        },
-        {
           "id": "4:9163684345509483659",
           "name": "imageUri"
         },
@@ -33,7 +29,7 @@
     },
     {
       "id": "2:2406867596870443066",
-      "lastPropertyId": "3:7844575420713285475",
+      "lastPropertyId": "4:2320124519434347870",
       "name": "FoodRecordEntity",
       "properties": [
         {
@@ -48,6 +44,10 @@
           "id": "3:7844575420713285475",
           "indexId": "1:6617444904205834791",
           "name": "foodId"
+        },
+        {
+          "id": "4:2320124519434347870",
+          "name": "quantity"
         }
       ],
       "relations": []
@@ -61,7 +61,9 @@
   "modelVersionParserMinimum": 4,
   "retiredEntityUids": [],
   "retiredIndexUids": [],
-  "retiredPropertyUids": [],
+  "retiredPropertyUids": [
+    8913152354734547377
+  ],
   "retiredRelationUids": [],
   "version": 1
 }

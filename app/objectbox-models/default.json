@@ -17,10 +17,6 @@
           "name": "name"
         },
         {
-          "id": "3:8913152354734547377",
-          "name": "unit"
-        },
-        {
           "id": "4:9163684345509483659",
           "name": "imageUri"
         },
@@ -65,7 +61,9 @@
   "modelVersionParserMinimum": 4,
   "retiredEntityUids": [],
   "retiredIndexUids": [],
-  "retiredPropertyUids": [],
+  "retiredPropertyUids": [
+    8913152354734547377
+  ],
   "retiredRelationUids": [],
   "version": 1
 }

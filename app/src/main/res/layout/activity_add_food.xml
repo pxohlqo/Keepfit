@@ -16,15 +16,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_menu_gallery" />
 
-    <TextView
-        android:id="@+id/add_food_foodName_textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="name"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/add_food_imageView" />
-
     <android.support.design.widget.TextInputLayout
         android:id="@+id/textInputLayout2"
         android:layout_width="0dp"
@@ -33,7 +24,7 @@
         android:layout_marginStart="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/add_food_foodName_textView">
+        app:layout_constraintTop_toBottomOf="@id/add_food_imageView">
 
         <android.support.design.widget.TextInputEditText
             android:id="@+id/add_food_foodName_editText"
@@ -42,15 +33,6 @@
             android:hint="food name" />
     </android.support.design.widget.TextInputLayout>
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="thermal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/textInputLayout3"
@@ -60,7 +42,7 @@
         android:layout_marginStart="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4">
+        app:layout_constraintTop_toBottomOf="@id/textInputLayout2">
 
         <android.support.design.widget.TextInputEditText
             android:id="@+id/add_food_foodThermal_editText"
@@ -70,33 +52,6 @@
             android:inputType="number" />
     </android.support.design.widget.TextInputLayout>
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="Serve Unit"
-        android:textAllCaps="false"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3" />
-
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/textInputLayout4"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3">
-
-        <android.support.design.widget.TextInputEditText
-            android:id="@+id/add_food_foodUnti_editText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="unit" />
-    </android.support.design.widget.TextInputLayout>
 
     <Button
         android:id="@+id/add_food_addFood_button"
@@ -107,5 +62,5 @@
         android:text="Add"
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3" />
 </android.support.constraint.ConstraintLayout>

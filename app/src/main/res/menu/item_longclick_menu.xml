@@ -2,9 +2,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:id="@+id/menu_item_longClick_delete"
-        android:title="delete"/>
+        android:title="@string/remove_item"/>
 
     <item android:id="@+id/menu_item_longClick_change"
-        android:title="change"/>
+        android:title="@string/modify_item"/>
 
 </menu>

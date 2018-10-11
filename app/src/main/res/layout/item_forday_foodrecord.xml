@@ -17,7 +17,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/item_foodRecord_imageView"
+            android:id="@+id/item_forDayRecord_imageView"
             android:layout_width="80dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -26,7 +26,7 @@
             app:srcCompat="@android:color/darker_gray" />
 
         <TextView
-            android:id="@+id/item_foodRecord_name"
+            android:id="@+id/item_forDayRecord_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -34,17 +34,17 @@
             android:text="Food 1"
             android:textColor="@android:color/black"
             android:textSize="18sp"
-            app:layout_constraintStart_toEndOf="@+id/item_foodRecord_imageView"
+            app:layout_constraintStart_toEndOf="@+id/item_forDayRecord_imageView"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/item_foorRecord_thermal"
+            android:id="@+id/item_foodRecord_thermal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="125 kcal."
-            app:layout_constraintStart_toStartOf="@+id/item_foodRecord_name"
-            app:layout_constraintTop_toBottomOf="@+id/item_foodRecord_name" />
+            app:layout_constraintStart_toStartOf="@+id/item_forDayRecord_name"
+            app:layout_constraintTop_toBottomOf="@+id/item_forDayRecord_name" />
 
         <TextView
             android:id="@+id/item_foodRecord_quantity"

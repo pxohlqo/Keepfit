@@ -1,16 +1,49 @@
 <resources>
-    <string name="app_name">Keepfit</string>
+    <string name="app_name">可以</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_actionBar_title">今天吃了什么？</string>
+
+    <string name="addRecord_actionbar_title">添加记录</string>
+
+    <string name="addFood_actionbar_title">添加食物</string>
 
     <string name="for_day_frag_state_future">下一顿吃</string>
 
     <string name="for_day_frag_state_no_record">牛逼啊！饿了一天</string>
 
+    <string name="drawer_open_description">Drawer Open</string>
+
+    <string name="drawer_closed_description">Drawer Closed</string>
+
+    <string name="drawer_menu_allRecords">所有记录</string>
+
+    <string name="drawer_menu_allFoods">食物库</string>
+
+    <string name="drawer_menu_info">关于</string>
+
+    <string name="all_record_footer_loading">加载中</string>
+
+    <style name="all_record_footer_error">加载失败</style>
+
+    <string name="all_record_footer_noMore">木有啦~</string>
+
+    <string name="dataSet_empty_text">没有哦~</string>
+
     <string-array name="food_list">
         <item>炸鸡</item>
         <item>汉堡</item>
         <item>薯条</item>
+        <item>牛排</item>
+        <item>火锅</item>
     </string-array>
+
+    <string-array name="drawer_list">
+        <item>所有记录</item>
+        <item>所有食物</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="remove_item">remove</string>
+    <string name="modify_item">modify</string>
 </resources>
