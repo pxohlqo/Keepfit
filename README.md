@@ -1,4 +1,4 @@
-# Keepfit
+# Keyi
 
 
 ![Travis](https://img.shields.io/badge/Minimum%20Android%20Version-7.0-brightgreen.svg?style=flat-square)
